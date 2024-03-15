@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       /*  CSS Reset */
+       body{
+        font-family: 'Agbalumo', system-ui;
+        padding: 0;
+        margin: 0;
+        background-image: url(image/bg.jpg);
+        color: white;
+       }
+
+
+       .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 48px;
+        top: 20px;
+        }
+
+        .left img{
+            width: 113px;
+        }
+
+        .left div{
+            line-height: 1;
+            font-size: 22px;
+            text-align: center;
+        }
+     
+       .mid{
+        display:block;
+        width: 45%;
+        margin: 29px auto;
+       /*  border: 2px solid green; */
+        
+       }
+  
+       .right{
+        position: absolute;
+        right: 34px;
+        top: 48px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+       
+       }
+
+       .navbar{
+        display: inline-block;
+       }
+
+       .navbar li {
+        display: inline-block;
+        font-size: 24px;
+       }
+
+       .navbar li a {
+        color: white;
+        text-decoration: none;
+         padding: 9px 14px;  
+       }
+
+       .navbar li a:hover  {
+            text-decoration: underline;
+            color: black
+       }
+
+       .navbar li a.active {
+        text-decoration: underline;
+       }
+
+       .btn{
+            font-family: 'Agbalumo', system-ui;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer ;
+       }
+            .right .btn:hover{
+             color: rgb(200, 113, 224);
+           text-decoration: underline;
+           }
+
+           .container{
+            border: 2px solid white;
+            margin: 136px 20px 80px 750px;
+            padding: 60px 90px 60px 70px;
+            width: 33%;
+            border-radius: 28px; 
+           }
+            
+           .form-group input{
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border : 2px solid black;
+            border-radius: 8px;
+            margin: 16px auto;
+            font-size: 25px;
+            font-family:'Agbalumo', system-ui; 
+           }
+
+           .container h1{
+            text-align: center;
+           }
+
+           .container button{
+            display: block;
+            width: 508px ;
+            margin: 25px auto;
+            }
+       
+    </style>
+</head>
+<body>
+    <header class="header">
+       <!--  left box for logo -->
+    <div class="left">
+    <img src="image/gym logo new.jpg" alt="logo">
+    <div> Fitness 360</div>
+    </div>
+       <!--  mid box for navigation -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+       <!--  right box for buttons -->
+    <div class="right">
+<button class="btn">Call Us Now</button>
+<button class="btn">E.mail Us</button>
+    </div>
+</header>
+
+<div class="container">
+ <h1>Join The Best Gym Of Mumbai Now</h1>
+ <form action="noaction.php">
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name" >
+    </div>
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Age & Gender" >
+    </div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Locality" >
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your E.mail Id" >
+</div>
+<div class="form-group">
+    <input type="text" name="" placeholder="Enter your Phone Number" >
+</div>
+<button class="btn">Submit</button>
+</form>
+</div>
+
+
+</body>
+</html>
